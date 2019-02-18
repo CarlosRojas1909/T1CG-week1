@@ -6,128 +6,158 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Favorite Actrees</title>
 
 </head>
 <body>
-    
-    <header>
-        <div>
-            <h2>Jennifer Aniston</h2>
-        </div>
-        <div>
-            <div>
-                <img src="https://img2.thejournal.ie/inline/2442088/original/?width=630&version=2442088" alt="Jennifer Aniston">
+
+    <div class="wrapper">
+        <header class="container">
+            <div class="container__title">
+                <h2>Jennifer Aniston</h2>
             </div>
-            <div>
-                <p>Jennifer Joanna Aniston (born February 11, 1969) is an American actress, film producer, and businesswoman. The daughter of actors John Aniston and Nancy Dow, she began working as an actress at an early age with an uncredited role in the 1987 film Mac and Me. After her career grew successfully in the 1990s, Aniston has remained a well-known public figure and established herself as one of the leading and highest-paid actresses in Hollywood as of 2018.
+            <div class="container__description" >
+                <div class="imagen">
+                    <img src="https://img2.thejournal.ie/inline/2442088/original/?width=630&version=2442088" alt="Jennifer Aniston">
+                </div>
+                <div class="information">
+                    <p>
+                        Jennifer Joanna Aniston (born February 11, 1969) is an American actress, film producer, and businesswoman. The daughter of actors John Aniston and Nancy Dow, she began working as an actress at an early age with an uncredited role in the 1987 film Mac and Me. After her career grew successfully in the 1990s, Aniston has remained a well-known public figure and established herself as one of the leading and highest-paid actresses in Hollywood as of 2018.
 
                         Aniston rose to fame portraying Rachel Green on the television sitcom Friends (1994–2004), for which she earned Primetime Emmy, Golden Globe, and Screen Actors Guild awards. The character was widely popular while the series aired and was later recognized as one of the greatest female characters in American television. Aniston has since played lead roles in numerous comedies and romantic comedies. Her box office successes include Bruce Almighty (2003), The Break-Up (2006), Marley & Me (2008), Just Go with It (2011), Horrible Bosses (2011), and We're the Millers (2013), each of which grossed over $200 million in worldwide box office receipts. Her most critically acclaimed roles include the dramedy The Good Girl (2002) and the drama Cake (2014).
                         
-                        Aniston co-founded production company Echo Films in 2008. Divorced from actor Brad Pitt, to whom she was married for five years, she is separated from actor Justin Theroux, whom she married in 2015.</p>
+                        Aniston co-founded production company Echo Films in 2008. Divorced from actor Brad Pitt, to whom she was married for five years, she is separated from actor Justin Theroux, whom she married in 2015.<br> <a  class="wiki" href="https://en.wikipedia.org/wiki/Jennifer_Aniston" target="_blank">click here to Wikipedia</a>
+                    </p>
+
+                </div>
+                
+                
+            </div>
+
+        </header>
+
+        <table class="table__list" style="width:50%">
+                <thead>
+                    <tr>
+                        <th>Hits</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Comedy</td>
+                        <td>Horrible Bosses</td>
+                        <td>2011</td>
+                    </tr>
+                    <tr>
+                        <td>Drama</td>
+                        <td>Marley & Me</td>
+                        <td>2008</td>                            
+                    </tr>
+                    <tr>
+                        <td>Comedy</td>
+                        <td>We're the Millers</td>
+                        <td>2013</td>
+                    </tr>
+                </tbody>
+        </table> 
+        <br>
+
+        <input class="centerClass" id="titleInput" type="text" placeholder="title">
+        <input class="centerClass" id="yearInput" type="text" placeholder="year">
+        <button class="date" id="tableButton">Add to table</button>
+
+        <br>
+        <fieldset class="date"> 
+                <legend>Start Date</legend> 
+                <label for="month_start">Month</label> 
+                <select id="month_start" name="month_start">
+                    <option>month</option>       
+                    <option>January</option>       
+                    <option>February</option>       
+                    <option>March</option>       
+                    <option>April</option>       
+                    <option>May</option>       
+                    <option>June</option>       
+                    <option>July</option>       
+                    <option>August</option>       
+                    <option>September</option>       
+                    <option>October</option>       
+                    <option>November</option>       
+                    <option>December</option>       
+                </select> 
+                <label for="day_start">Day</label> 
+                <select id="day_start" name="day_start"> 
+                    <option>day</option>       
+                    <option>1</option>       
+                    <option>2</option>       
+                    <option>3</option>       
+                    <option>4</option>       
+                    <option>5</option>       
+                    <option>6</option>       
+                    <option>7</option>       
+                    <option>8</option>       
+                    <option>9</option>       
+                    <option>10</option>       
+                    <option>11</option>       
+                    <option>12</option>       
+                    <option>13</option>       
+                    <option>14</option>       
+                    <option>15</option>       
+                    <option>16</option>       
+                    <option>17</option>       
+                    <option>18</option>       
+                    <option>19</option>       
+                    <option>20</option>       
+                    <option>21</option>       
+                    <option>22</option>       
+                    <option>23</option>       
+                    <option>24</option>       
+                    <option>25</option>       
+                    <option>26</option>       
+                    <option>27</option>       
+                    <option>28</option>       
+                    <option>29</option>       
+                    <option>30</option>       
+                    <option>31</option>       
+                </select>
+                <label for="year_start">Year</label> 
+                <select id="year_start" name="year_start"> 
+                    <option>year</option>       
+                    <option>2009</option>       
+                    <option>2010</option>       
+                    <option>2011</option>       
+                    <option>2012</option>       
+                    <option>2013</option>       
+                    <option>2014</option>       
+                    <option>2015</option>       
+                    <option>2016</option>       
+                    <option>2017</option>       
+                    <option>2018</option>       
+                </select> 
+            </fieldset> 
+
+        <footer class="footer">
+            <div class="social">
+                <ul class="social__links">
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="creator">
+                <p>
+                    This webpage was created by JuanCarlos Rojas.<br>
+                    Contact information: <a href="mailto:jcrojas2122@gmail.com">jcrojas2122@gmail.com</a>
+                </p>
             </div>
             
-            <div class="div"><a href="https://en.wikipedia.org/wiki/Jennifer_Aniston"></a></div>
-        </div>
-
-    </header>
-
-    <table style="width:50%">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Movie Title</th>
-                    <th>Year</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Movie1</td>
-                    <td>The table body</td>
-                    <td>with two columns</td>
-                </tr>
-                <tr>
-                    <td>Movie2</td>
-                    <td>with two columns</td>
-                    <td>with two columns</td>                            
-                </tr>
-                <tr>
-                    <td>Movie3</td>
-                    <td>with two columns</td>
-                    <td>with two columns</td>
-                </tr>
-            </tbody>
-    </table>  
-    <fieldset class="date"> 
-            <legend>Start Date </legend> 
-            <label for="month_start">Month</label> 
-            <select id="month_start" name="month_start">
-                <option>month</option>       
-                <option>January</option>       
-                <option>February</option>       
-                <option>March</option>       
-                <option>April</option>       
-                <option>May</option>       
-                <option>June</option>       
-                <option>July</option>       
-                <option>August</option>       
-                <option>September</option>       
-                <option>October</option>       
-                <option>November</option>       
-                <option>December</option>       
-            </select> 
-            <label for="day_start">Day</label> 
-            <select id="day_start" name="day_start"> 
-                <option>day</option>       
-                <option>1</option>       
-                <option>2</option>       
-                <option>3</option>       
-                <option>4</option>       
-                <option>5</option>       
-                <option>6</option>       
-                <option>7</option>       
-                <option>8</option>       
-                <option>9</option>       
-                <option>10</option>       
-                <option>11</option>       
-                <option>12</option>       
-                <option>13</option>       
-                <option>14</option>       
-                <option>15</option>       
-                <option>16</option>       
-                <option>17</option>       
-                <option>18</option>       
-                <option>19</option>       
-                <option>20</option>       
-                <option>21</option>       
-                <option>22</option>       
-                <option>23</option>       
-                <option>24</option>       
-                <option>25</option>       
-                <option>26</option>       
-                <option>27</option>       
-                <option>28</option>       
-                <option>29</option>       
-                <option>30</option>       
-                <option>31</option>       
-            </select>
-            <label for="year_start">Year</label> 
-            <select id="year_start" name="year_start"> 
-                <option>year</option>       
-                <option>2009</option>       
-                <option>2010</option>       
-                <option>2011</option>       
-                <option>2012</option>       
-                <option>2013</option>       
-                <option>2014</option>       
-                <option>2015</option>       
-                <option>2016</option>       
-                <option>2017</option>       
-                <option>2018</option>       
-            </select> 
-          </fieldset> 
-
+        </footer>    
+    </div>
     
 </body>
 </html>

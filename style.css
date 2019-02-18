@@ -1,4 +1,123 @@
-table, th, td {
-  border: 1px solid black;
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background:linear-gradient( to right bottom,#e66465, #9198e5);
+  /* font-family: 'Lato', sans-serif; */
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  padding: 5.5rem 6.5rem;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #fff;
+  color: #555;
+}
+
+.container {
+  text-align: center;
+  width: auto;
+   padding: 5rem;
+}
+
+.container__title {
+  margin-bottom: 15rem;
+  
+}
+
+.container__title h2 {
+  font-size: 6.5rem;
+  font-weight: 700;
+}
+
+
+
+.container__description {
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 6rem;
+}
+
+.imagen {
+  flex: 0 0 35%;
+  width: 100%;
+  padding-left: 0
+}
+
+
+.information {
+  display: flex;
+  align-content: center;
+  flex: 0 0 65%;
+  width: 100%;
+}
+
+.information p {
+  font-size: 2rem;
+  text-align: justify;
+  padding: 0 9rem;
+  
+}
+
+.wiki:link,
+.wiki:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: rgba(27, 2, 250, 0.89);
+}
+
+.wiki:hover,
+.wiki:active {
+  color: rgba(224, 65, 65, 0.815);
+}
+
+.table__list {
+  padding-left: 5rem;
+}
+
+ th, td {
+  font-size: 2rem;
+  border: 0.1rem solid black;
+  text-align: center;
+}
+
+label,
+option {
+  font-size: 1.8rem;
+}
+
+.footer {
+  background-color: #333;
+  height: 15rem;
+  width: 100%;
+  margin-top: 5rem;
+  font-size: 1.6rem;
+}
+
+.social {
+  float: left;
+}
+
+.creator {
+  float: right;
+}
+
+.social__links {
+  list-style: none;
+}
+
+.social__links li {
+  display: inline-block;
+  margin: 2rem 1rem;
+}
