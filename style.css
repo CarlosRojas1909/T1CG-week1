@@ -1,10 +1,10 @@
 
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700'); */
+
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
@@ -13,30 +13,31 @@ html {
 
 body {
   background:linear-gradient( to right bottom,#e66465, #9198e5);
-  /* font-family: 'Lato', sans-serif; */
+  background-size: cover;
   font-weight: 400;
   text-rendering: optimizeLegibility;
-  padding: 5.5rem 6.5rem;
+  padding: 4rem;
+  box-sizing: border-box;
 }
 
 .wrapper {
-  width: 100%;
   background-color: #fff;
+  padding: 5rem;
   color: #555;
 }
 
 .container {
+  padding: 0;
   text-align: center;
   width: auto;
-   padding: 5rem;
 }
 
 .container__title {
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
   
 }
 
-.container__title h2 {
+.container__title--modifier {
   font-size: 6.5rem;
   font-weight: 700;
 }
@@ -82,8 +83,34 @@ body {
   color: rgba(224, 65, 65, 0.815);
 }
 
-.table__list {
-  padding-left: 5rem;
+
+.section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10rem 0;
+}
+
+.movie {
+  font-size: 2rem;
+}
+
+.movie__button {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10rem;
+  padding: .1rem .7rem;
+  background-color: red;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
+
+
+
+.date {
+  font-size: 2rem;
 }
 
  th, td {
@@ -92,25 +119,44 @@ body {
   text-align: center;
 }
 
-label,
-option {
-  font-size: 1.8rem;
-}
+
 
 .footer {
   background-color: #333;
-  height: 15rem;
-  width: 100%;
-  margin-top: 5rem;
-  font-size: 1.6rem;
+  margin-top: 2rem;
+  padding: 4rem 4rem;
+  height: 20rem;
 }
 
+.footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
 .social {
-  float: left;
+  float: right;
 }
 
 .creator {
-  float: right;
+  float: left;
+}
+
+.creator p {
+  color: #777;
+  line-height: 3rem;
+  font-size: 1.6rem;
+}
+
+.author {
+  color: #f7f7f7;
+}
+
+.e-address:link,
+.e-address:visited {
+    font-size: 1.8rem;
 }
 
 .social__links {
@@ -120,4 +166,29 @@ option {
 .social__links li {
   display: inline-block;
   margin: 2rem 1rem;
+}
+
+.fab {
+  font-size: 2rem;
+}
+
+
+.fa-facebook-square:hover, 
+.fa-facebook-square:active {
+  color: rgb(59, 89, 152);
+}
+
+.fa-twitter:hover,
+.fa-twitter:active {
+  color: rgb(29, 161, 242);
+}
+
+.fa-google-plus-square:hover,
+.fa-google-plus-square:active {
+  color: rgb(219, 68, 55);
+}
+
+.fa-instagram:hover,
+.fa-instagram:active {
+  color: rgb(195, 42, 163);
 }
