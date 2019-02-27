@@ -1,6 +1,5 @@
 
 
-
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +17,7 @@ body {
   text-rendering: optimizeLegibility;
   padding: 4rem;
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -34,7 +34,7 @@ body {
 
 .container__title {
   margin-bottom: 10rem;
-  
+
 }
 
 .container__title--modifier {
@@ -68,7 +68,7 @@ body {
   font-size: 2rem;
   text-align: justify;
   padding: 0 9rem;
-  
+  margin-right: 10rem;
 }
 
 .wiki:link,
@@ -80,7 +80,7 @@ body {
 
 .wiki:hover,
 .wiki:active {
-  color: rgba(224, 65, 65, 0.815);
+  background-color: rgba(300, 65, 65, 0.9);
 }
 
 
@@ -92,31 +92,41 @@ body {
   margin: 10rem 0;
 }
 
+
+
 .movie {
-  font-size: 2rem;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+
+}
+
+.text-input {
+  width: 20rem;
+  height: 3rem;
 }
 
 .movie__button {
   display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  outline: none;
+  margin: 0  2rem 0 8rem;
   text-decoration: none;
   border-radius: 10rem;
-  padding: .1rem .7rem;
   background-color: red;
   color: #fff;
-  border: 0;
-  outline: none;
 }
 
-
-
-.date {
-  font-size: 2rem;
+.table__list {
+  border-collapse: collapse;
+  border: .1rem solid black;
 }
 
  th, td {
   font-size: 2rem;
-  border: 0.1rem solid black;
+   border: 0.1rem solid black;
   text-align: center;
+  border: .1rem solid black;
 }
 
 
@@ -168,12 +178,16 @@ body {
   margin: 2rem 1rem;
 }
 
+.footer__links {
+  color: #777;
+}
+
 .fab {
   font-size: 2rem;
 }
 
 
-.fa-facebook-square:hover, 
+.fa-facebook-square:hover,
 .fa-facebook-square:active {
   color: rgb(59, 89, 152);
 }

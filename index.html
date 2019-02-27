@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+        
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
@@ -45,8 +44,9 @@
 
                         Aniston co-founded production company Echo Films in 2008. Divorced from actor Brad Pitt, to whom
                         she was married for five years, she is separated from actor Justin Theroux, whom she married in
-                        2015.<br> <a class="wiki" href="https://en.wikipedia.org/wiki/Jennifer_Aniston"
-                            target="_blank">click to Wikipedia</a>
+                        2015...<br> 
+                        <a class="wiki" href="https://en.wikipedia.org/wiki/Jennifer_Aniston"
+                            target="_blank">Know more &rarr;</a>
                     </p>
 
                 </div>
@@ -85,14 +85,24 @@
                 </tbody>
             </table>
           
-
-            <div class="movie">
-                <input class="movie movie__title" type="text" placeholder="title">
-                <input class="movie movie__year" type="text" placeholder="year">
-                <button class="movie movie__button">Add to table</button>
-
-                <h3 class="date">Date: <input class="date" type="date" /></h3>
-            </div>
+            
+            <form class="movie">
+                <div>
+                    <label for="title">Title:</label>
+                    <input id="title" class="movie__title text-input" type="text" placeholder="title">
+                </div>
+                <div>
+                    <label for="year">Year:</label>
+                    <input id="year" class="movie__year text-input" type="text" placeholder="year">
+                </div>
+                
+                <div>
+                    <label for="date">Date:</label>
+                    <input id="date" class="date text-input" type="date" />
+                    <a class="movie__button text-input">Add to table</a>
+                </div>
+                
+            </form>
 
 
             
@@ -101,10 +111,10 @@
         <footer class="footer">
             <div class="social">
                 <ul class="social__links">
-                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                    <li><a class="footer__links" href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a class="footer__links" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="footer__links" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="footer__links" href="#"><i class="fab fa-google-plus-square"></i></a></li>
                 </ul>
             </div>
             <div class="creator">
