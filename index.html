@@ -65,34 +65,27 @@
 
         <main class="main-content">
             <section class="section trivia">
-                    <a onclick="videoToggleFunc()" class="movie__button text-input">Video Toogle</a>
-                    <a class="movie__button text-input">Play Trivia</a>
+                    <button onclick="videoToggleFunc()" class="movie__button text-input">Video Toogle</button>
+                    <button onclick="triviaToggleFunc()" class="movie__button text-input">Play Trivia</button>
 
 
-                    <div id="trivia__game">
+                    <div class="classHidden" id="trivia__game">
+
                             <div id="top__block">
                                 <h2>Play Trivia</h2>
-                                <p>Question: <span id="number1">Inject question here!</span> </p>
-                                <p>Score: <span id="score1" >inject score here!</span> </p>
+                                <p class="questionTrivia">Question:  </p>
+
+                                <input id="triviaId" type="text" placeholder="enter answer" >
                                 <hr />
                             </div>
 
                             <div id="bottom__block">
-                                <div id="question1"></div>
-                                <div id="option1"></div>
-                                <div id="option2"></div>
-                                <div id="option3"></div>
-                                <div id="option4"></div>                      
-                                <div id="answer1"></div>
-                            
-                                <button class="button" id="message1">Start</button>
-                                <button class="button" id="message1">Next</button>
+                               
+                                <button onclick="answerQuestion()" class="button-trivia movie__button text-input">Answer</button>
+                                <button onclick="nextQuestion()" class="button-trivia movie__button text-input">Next</button>
 
-                                <button class="button" >Reset</button>
-                                
-                                
-                                <div id="next1"></div>
-                        
+                                <button onclick="resetGame()" class="button-trivia movie__button text-input">Reset</button>
+                                                        
                             </div>  
                     </div>  
             </section>
@@ -115,7 +108,7 @@
                                 <input id="date" class="date text-input" type="date" />
                             
                             </div>
-                            <a onclick="addToTable()" class="movie__button text-input text-input--form">Add to table</a>
+                            <button type="button" onclick="addToTable()" id="prevent" class="movie__button text-input text-input--form">Add to table</button>
                             
                     </form>
                        
@@ -156,7 +149,7 @@
                 <label class="area__label" for="comment">Comments: </label>
                 <textarea class="area__textarea" id="comment" name="textarea" cols="30" rows="4"></textarea>
 
-                <a  onclick="submitFunc()" class="movie__button text-input button-area">Submit</a>
+                <button  onclick="submitFunc()" class="movie__button text-input button-area">Submit</button>
 
                
             </section>
@@ -168,10 +161,10 @@
         <footer class="footer">
             <div class="social">
                 <ul class="social__links">
-                    <li><a class="footer__links" href="#"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a class="footer__links" href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a class="footer__links" href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a class="footer__links" href="#"><i class="fab fa-google-plus-square"></i></a></li>
+                    <li><a class="footer__links"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a class="footer__links"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="footer__links"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="footer__links"><i class="fab fa-google-plus-square"></i></a></li>
                 </ul>
             </div>
             <div class="creator">

@@ -139,10 +139,11 @@ lable {
 
 .movie__button {
   display: block;
+  outline: none;
+  border: 0;
   color: #fff;
   font-size: 2rem;
   background-color: rgb(236,65,65);
-  text-decoration: none;
   border-radius: 10rem;
   margin: 2rem 3rem 0 2rem;
 }
@@ -151,7 +152,11 @@ lable {
   width: 20rem;
   height: 3rem;
   text-align: center;
-  cursor: pointer;
+}
+
+.button-trivia {
+  display: inline-block;
+  margin: 6rem 4rem;
 }
 
 .text-input--form {
