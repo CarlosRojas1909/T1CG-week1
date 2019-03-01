@@ -20,10 +20,19 @@
             <div class="container__title">
                 <h2 class="container__title--modifier">Jennifer Aniston</h2>
             </div>
+
             <div class="container__description">
                 <div class="imagen">
-                    <img class="imagen__jen" src="https://img2.thejournal.ie/inline/2442088/original/?width=630&version=2442088"
+                    <img 
+                    id="jenniferPic"
+                    class="imagen__jen" src="https://img2.thejournal.ie/inline/2442088/original/?width=630&version=2442088"
                         alt="Jennifer Aniston">
+
+                    <iframe 
+                        id="jenniferVideo"
+                        class="classHidden"
+                        src="https://www.youtube.com/embed/Ut7ncj4rF-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
                 </div>
                 <div class="information">
                     <p>
@@ -50,62 +59,110 @@
                     </p>
 
                 </div>
-
-
             </div>
 
         </header>
 
-        <main class="section">
+        <main class="main-content">
+            <section class="section trivia">
+                    <a onclick="videoToggleFunc()" class="movie__button text-input">Video Toogle</a>
+                    <a class="movie__button text-input">Play Trivia</a>
 
-            <table class="table__list" style="width:50%">
-                <thead>
-                    <tr>
-                        <th>Hits</th>
-                        <th>Title</th>
-                        <th>Year</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Comedy</td>
-                        <td>Horrible Bosses</td>
-                        <td>2011</td>
-                    </tr>
-                    <tr>
-                        <td>Drama</td>
-                        <td>Marley & Me</td>
-                        <td>2008</td>
-                    </tr>
-                    <tr>
-                        <td>Comedy</td>
-                        <td>We're the Millers</td>
-                        <td>2013</td>
-                    </tr>
-                </tbody>
-            </table>
-          
+
+                    <div id="trivia__game">
+                            <div id="top__block">
+                                <h2>Play Trivia</h2>
+                                <p>Question: <span id="number1">Inject question here!</span> </p>
+                                <p>Score: <span id="score1" >inject score here!</span> </p>
+                                <hr />
+                            </div>
+
+                            <div id="bottom__block">
+                                <div id="question1"></div>
+                                <div id="option1"></div>
+                                <div id="option2"></div>
+                                <div id="option3"></div>
+                                <div id="option4"></div>                      
+                                <div id="answer1"></div>
+                            
+                                <button class="button" id="message1">Start</button>
+                                <button class="button" id="message1">Next</button>
+
+                                <button class="button" >Reset</button>
+                                
+                                
+                                <div id="next1"></div>
+                        
+                            </div>  
+                    </div>  
+            </section>
+        
+
+            <section class="section">
+
+                    <form class="movie">
+                            <div class="movie movie--input">
+                                <label for="title">Title: </label>
+                                <input id="title" class="movie__title text-input" type="text" placeholder="title">
+                            </div>
+                            <div class="movie movie--input">
+                                <label for="year">Year: </label>
+                                <input id="year" class="movie__year text-input" type="text" placeholder="year">
+                            </div>
+                            
+                            <div class="movie movie--input">
+                                <label for="date">Date: </label>
+                                <input id="date" class="date text-input" type="date" />
+                            
+                            </div>
+                            <a onclick="addToTable()" class="movie__button text-input text-input--form">Add to table</a>
+                            
+                    </form>
+                       
+                    
+
+                    <table class="table__list" style="width:50%">
+                        <thead>
+                            <tr>
+                                <th>Genres</th>
+                                <th>Title</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Comedy</td>
+                                <td>Horrible Bosses</td>
+                                <td>2011</td>
+                            </tr>
+                            <tr>
+                                <td>Drama</td>
+                                <td>Marley & Me</td>
+                                <td>2008</td>
+                            </tr>
+                            <tr>
+                                <td>Comedy</td>
+                                <td>We're the Millers</td>
+                                <td>2013</td>
+                            </tr>
+
+                        
+                        </tbody>
+                    </table>
             
-            <form class="movie">
-                <div>
-                    <label for="title">Title:</label>
-                    <input id="title" class="movie__title text-input" type="text" placeholder="title">
-                </div>
-                <div>
-                    <label for="year">Year:</label>
-                    <input id="year" class="movie__year text-input" type="text" placeholder="year">
-                </div>
-                
-                <div>
-                    <label for="date">Date:</label>
-                    <input id="date" class="date text-input" type="date" />
-                    <a class="movie__button text-input">Add to table</a>
-                </div>
-                
-            </form>
+            </secttion>
+        
+            <section class="area">
+                <label class="area__label" for="comment">Comments: </label>
+                <textarea class="area__textarea" id="comment" name="textarea" cols="30" rows="4"></textarea>
 
+                <a  onclick="submitFunc()" class="movie__button text-input button-area">Submit</a>
 
-            
+               
+            </section>
+
+         
+           
         </main>
 
         <footer class="footer">
@@ -127,6 +184,10 @@
 
         </footer>
     </div>
+
+
+    <script src="./custome.js"></script>
+    
 
 </body>
 

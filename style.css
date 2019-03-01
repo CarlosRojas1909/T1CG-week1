@@ -13,8 +13,8 @@ html {
 body {
   background:linear-gradient( to right bottom,#e66465, #9198e5);
   background-size: cover;
+  background-position: center;
   font-weight: 400;
-  text-rendering: optimizeLegibility;
   padding: 4rem;
   box-sizing: border-box;
   line-height: 1.5;
@@ -66,11 +66,19 @@ body {
   perspective: 200rem;
 }
 
+.classHidden {
+  display: none;
+}
+
 .imagen__jen:hover {
   transform: rotateY(-180deg)
 
 }
 
+#jenniferVideo {
+  width:66.736rem;
+  height: 50rem;
+}
 
 
 .information {
@@ -81,10 +89,10 @@ body {
 }
 
 .information p {
-  font-size: 2rem;
+  font-size: 2.1rem;
   text-align: justify;
   padding: 0 9rem;
-  margin-right: 10rem;
+  margin-right: 8rem;
 }
 
 .wiki:link,
@@ -99,52 +107,110 @@ body {
   background-color: rgba(300, 65, 65, 0.9);
 }
 
-
-.section {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: 10rem 0;
+.movie, .table__list {
+  margin: 0 auto;
 }
 
 
 
-.movie {
-  margin-top: 1rem;
-  font-size: 2.5rem;
 
+.movie {
+  display: table;
+  font-size: 2rem;
+  
+}
+
+
+.movie--input {
+  display: table-row;
+}
+
+lable, input {
+  display: table-cell;
+  margin-bottom: 1rem;
+}
+
+
+lable {
+  padding-right: 1rem;
+}
+
+
+
+.movie__button {
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  background-color: rgb(236,65,65);
+  text-decoration: none;
+  border-radius: 10rem;
+  margin: 2rem 3rem 0 2rem;
 }
 
 .text-input {
   width: 20rem;
   height: 3rem;
+  text-align: center;
+  cursor: pointer;
 }
 
-.movie__button {
-  display: inline-block;
-  text-align: center;
-  font-size: 2rem;
-  outline: none;
-  margin: 0  2rem 0 8rem;
-  text-decoration: none;
-  border-radius: 10rem;
-  background-color: red;
-  color: #fff;
+.text-input--form {
+  margin-left: 5rem;
 }
+
+.movie__button:hover,
+.movie__button:active {
+  background-color: rgb(242,102,102);
+}
+
+
 
 .table__list {
   border-collapse: collapse;
-  border: .1rem solid black;
+  margin: 3rem auto;
 }
 
  th, td {
   font-size: 2rem;
    border: 0.1rem solid black;
   text-align: center;
-  border: .1rem solid black;
 }
 
+.area {
+  text-align: center;
+  margin: 12rem 0;
+  font-size: 2rem;
+}
+
+#new__element {
+  background-color: rgb(236,65,65);
+  color: #f7f7f7;
+  margin: 2rem auto;
+}
+
+.area__label,
+.area__textarea {
+    letter-spacing: 1px;
+    font-size: 2rem;
+
+}
+.area__textarea {
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.area__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button-area {
+  display: block;
+  margin: 5rem auto;
+}
 
 
 .footer {
@@ -223,3 +289,65 @@ body {
 .fa-instagram:active {
   color: rgb(195, 42, 163);
 }
+
+
+@media screen and (max-width: 1024px) {
+ 
+ 
+  .wrapper {
+    overflow: hidden;
+    /* background-color: transparent; */
+
+  }
+  .container {
+    margin: 0 auto;
+  }
+
+  .container__description {
+    flex-direction: column;
+  }
+  .information {
+    margin-top: 5rem;
+  }
+
+  .information p {
+    padding: 0 4rem;
+    margin-right: 0;
+  }
+
+  .movie__button {
+    margin-left: 6rem;
+  }
+}
+
+
+
+
+
+#trivia__game {
+  border: .4rem solid black;
+  width: 100rem;
+  height: auto;
+  border-radius: 1rem;
+  font-size: 2rem;
+  margin: 8rem auto;
+  text-align: center;
+}
+
+.button:link,
+.button:visited {
+  background-color: rgb(236,65,65);
+  color: white;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.button:hover,
+.button:active {
+  background-color: rgb(242,102,102);
+
+}
+
+
