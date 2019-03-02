@@ -50,6 +50,8 @@ initialQuestion = () => {
         element.innerHTML = displayQuestion;
         
         questionTrivia.appendChild(element);
+
+
        
     };
    
@@ -57,6 +59,7 @@ initialQuestion = () => {
 triviaToggleFunc = () => {
 
         trivia.classList.toggle("classHidden");
+        
         initialQuestion();
   
 };
@@ -65,6 +68,8 @@ triviaToggleFunc = () => {
 
 
 answerQuestion = () => {
+
+    initialQuestion();
     
     bottomBlock.insertAdjacentElement("afterbegin", answerOne)
     
