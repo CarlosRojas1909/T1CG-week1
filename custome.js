@@ -21,7 +21,9 @@ const questions = [
 
  let randomIndex = Math.floor(Math.random() * questions.length);
 
+ //this span will be created to display a message if the answer is right or wrong
  let answerOne = document.createElement("span");
+    answerOne.id = "newSpan";
 
  let displayQuestion =  questions[randomIndex];
 
@@ -41,25 +43,25 @@ videoToggleFunc = () => {
 }
 
 //Trivia
+initialQuestion = () => {
+
+    //this span will be created to display my question at the beginning of the game
+       element = document.createElement("span")
+        element.innerHTML = displayQuestion;
+        
+        questionTrivia.appendChild(element);
+       
+    };
+   
+
 triviaToggleFunc = () => {
 
-
-    trivia.classList.toggle("classHidden");
-
-    initialQuestion();
+        trivia.classList.toggle("classHidden");
+        initialQuestion();
   
 };
 
 
-initialQuestion = () => {
-
- 
-    element = document.createElement("span")
-     element.innerHTML = displayQuestion;
-     
-     questionTrivia.appendChild(element);
-    
- };
 
 
 answerQuestion = () => {
@@ -96,7 +98,7 @@ questionOneHandler = () => {
             answerOne.innerHTML = "Wrong!!!";
             break;
          case "c":
-            answerOne.innerHTML = "Correct Answer";
+            answerOne.innerHTML = "Correct Answer!!!";
         break;
     }
     
@@ -108,7 +110,7 @@ questionTwoHandler = () => {
    
     switch (triviaInput.value) {
          case "a":
-            answerOne.innerHTML = "Correct Answer";
+            answerOne.innerHTML = "Correct Answer!!!";
 
             break;
          case "b":
@@ -124,7 +126,7 @@ questionThreeHandler = () => {
     
     switch (triviaInput.value) {
          case "b":
-            answerOne.innerHTML = "Correct Answer";
+            answerOne.innerHTML = "Correct Answer!!!";
             break;
          case "a":
          case "c":
@@ -137,7 +139,7 @@ questionThreeHandler = () => {
 // next question Button
 nextQuestion = () => {
 
-    if(answerOne.innerHTML === "Correct Answer") {
+    if(answerOne.innerHTML === "Correct Answer!!!") {
 
         element.innerHTML = "";
         randomIndex = Math.floor(Math.random() * questions.length);
@@ -194,7 +196,13 @@ addToTable = () => {
     
 }
 
+deleteRow = () => {
 
+    table.deleteRow(-1);
+}
+
+
+//textArea functinality
 
 submitFunc = () => {
 

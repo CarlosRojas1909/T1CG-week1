@@ -75,7 +75,7 @@
                                 <h2>Play Trivia</h2>
                                 <p class="questionTrivia">Question:  </p>
 
-                                <input id="triviaId" type="text" placeholder="enter answer" >
+                                <input class="input__trivia" id="triviaId" type="text" placeholder="enter answer" >
                                 <hr />
                             </div>
 
@@ -109,9 +109,11 @@
                             
                             </div>
                             <button type="button" onclick="addToTable()" id="prevent" class="movie__button text-input text-input--form">Add to table</button>
+
+                            <button type="button" onclick="deleteRow()" id="prevent" class="movie__button text-input text-input--form">Delete Row</button>
                             
                     </form>
-                       
+                   
                     
 
                     <table class="table__list" style="width:50%">
