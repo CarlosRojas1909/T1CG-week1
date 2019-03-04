@@ -33,6 +33,7 @@ const questions = [
 
 
 //============================================================================================================
+//Unable to debugged problem on trivia game section, everytime a click on trivia button , all random questions are piling up
 
 // Funtion to toggle pictire to youtube video
 videoToggleFunc = () => {
